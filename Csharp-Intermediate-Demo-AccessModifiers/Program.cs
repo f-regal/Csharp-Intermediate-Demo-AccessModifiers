@@ -6,7 +6,9 @@ namespace Csharp_Intermediate_Demo_AccessModifiers
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var person = new Person();
+            person.SetBirthdate(new DateTime(1982, 1, 1));
+            Console.WriteLine(person.GetBirthdate());
         }
     }
 }
